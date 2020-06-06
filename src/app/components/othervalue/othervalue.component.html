@@ -1,0 +1,141 @@
+<div class="centerTitle">
+  <h3 class="card-title">Digite el valor a retirar y presione "Continuar"</h3>
+  <p class="card-text">
+    Recuerde que la cantidad máxima a retirar es de $ 600.000 y el valor mínimo
+    es de $ 10.000
+  </p>
+</div>
+
+<div class="container mt-3 pt-3 text-center">
+  <label>$ {{ valorARetirar }}</label>
+</div>
+
+<div class="container mt-3 pt-3">
+  <table class="table table-bordered table-sm">
+    <tbody class="text-center">
+      <tr class="bg-primary">
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="7"
+            (click)="asignarValorLabel('7')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="8"
+            (click)="asignarValorLabel('8')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="9"
+            (click)="asignarValorLabel('9')"
+          />
+        </td>
+      </tr>
+      <tr class="bg-primary">
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="4"
+            (click)="asignarValorLabel('4')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="5"
+            (click)="asignarValorLabel('5')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="6"
+            (click)="asignarValorLabel('6')"
+          />
+        </td>
+      </tr>
+      <tr class="bg-primary">
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="1"
+            (click)="asignarValorLabel('1')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="2"
+            (click)="asignarValorLabel('2')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="3"
+            (click)="asignarValorLabel('3')"
+          />
+        </td>
+      </tr>
+      <tr class="bg-primary">
+        <td>
+          <input class="btn btn-primary btn-sm" type="button" value="*" />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="0"
+            (click)="asignarValorLabel('0')"
+          />
+        </td>
+        <td>
+          <input
+            class="btn btn-primary btn-sm"
+            type="button"
+            value="000"
+            (click)="asignarValorLabel('000')"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="row mt-2">
+  <div class="col-sm">
+    <button
+      type="button"
+      class="btn btn-danger btn-sm btn-sm rounded float-right m-1"
+      [routerLink]="['/ending']"
+    >
+      Cancelar
+    </button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm">
+    <button
+      type="button"
+      class="btn btn-primary btn-sm btn-sm rounded float-right m-1"
+      (click)="continueDonation()"
+    >
+      Continuar
+    </button>
+  </div>
+</div>

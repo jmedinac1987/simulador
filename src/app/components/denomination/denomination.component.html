@@ -1,0 +1,29 @@
+<div class="centerTitle">
+  <h3 class="card-title">
+    Este cajero cuenta con billetes de denominación de:
+  </h3>
+  <p class="card-text">
+    $ 10.000 <br />
+    $ 20.000
+  </p>
+  <p class="card-text">¿Desea continuar?</p>
+</div>
+
+<div class="row mt-3">
+  <div class="col-sm">
+    <button
+      type="button"
+      class="btn btn-primary btn-sm btn-sm rounded float-left m-2"
+      [routerLink]="['/selecttransaction']"
+    >
+      SI
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary btn-sm btn-sm rounded float-right m-2"
+      [routerLink]="['/home']"
+    >
+      NO
+    </button>
+  </div>
+</div>
