@@ -16,6 +16,15 @@ import { EnterpasswordComponent } from './components/enterpassword/enterpassword
 import { OperationcostComponent } from './components/operationcost/operationcost.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { CountingmoneyComponent } from './components/countingmoney/countingmoney.component';
+import { TransactioncostComponent } from './components/transactioncost/transactioncost.component';
+import { SelecttransactiontwoComponent } from './components/selecttransactiontwo/selecttransactiontwo.component';
+import { SelecttransactionthreeComponent } from './components/selecttransactionthree/selecttransactionthree.component';
+import { SelecttypeaccountComponent } from './components/selecttypeaccount/selecttypeaccount.component';
+import { PrintreceipttwoComponent } from './components/printreceipttwo/printreceipttwo.component';
+import { EnterpasswordtwoComponent } from './components/enterpasswordtwo/enterpasswordtwo.component';
+import { TransactioncosttwoComponent } from './components/transactioncosttwo/transactioncosttwo.component';
+import { OperationcosttwoComponent } from './components/operationcosttwo/operationcosttwo.component';
+import { ConsultingComponent } from './components/consulting/consulting.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +41,16 @@ import { CountingmoneyComponent } from './components/countingmoney/countingmoney
     EnterpasswordComponent,
     OperationcostComponent,
     SpinnerComponent,
-    CountingmoneyComponent
+    CountingmoneyComponent,
+    TransactioncostComponent,
+    SelecttransactiontwoComponent,
+    SelecttransactionthreeComponent,
+    SelecttypeaccountComponent,
+    PrintreceipttwoComponent,
+    EnterpasswordtwoComponent,
+    TransactioncosttwoComponent,
+    OperationcosttwoComponent,
+    ConsultingComponent
   ],
   imports: [
     BrowserModule,

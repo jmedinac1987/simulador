@@ -1,7 +1,11 @@
 <div class="centerTitle">
   <h3 class="card-title">
-    ¿Desea conocer el costo de la transacción?
+    El costo de la transacción es:
   </h3>
+  <p class="card-text">
+    $ 0
+  </p>
+  <p class="card-text">¿Desea continuar?</p>
 </div>
 
 <div class="row mt-3">
@@ -9,14 +13,14 @@
     <button
       type="button"
       class="btn btn-primary btn-sm btn-sm rounded float-left m-2"
-      [routerLink]="['/transactioncost']"
+      [routerLink]="['/countingmoney']"
     >
       SI
     </button>
     <button
       type="button"
       class="btn btn-primary btn-sm btn-sm rounded float-right m-2"
-      [routerLink]="['/countingmoney']"
+      [routerLink]="['/ending']"
     >
       NO
     </button>
