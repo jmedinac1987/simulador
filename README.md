@@ -5,4 +5,4 @@ Esta aplicación es una simulación que le permite al adulto mayor practicar lo 
 Ruta de pruebas: https://jmedinac1987.github.io/simulador/
 
 
-Contraseñas de prueba: 1000, 2222, 4448, 3333, 5678
+Contraseña de prueba: 1000, 4448, 5678
