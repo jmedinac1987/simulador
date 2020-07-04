@@ -26,7 +26,7 @@ export class EnterpasswordtwoComponent implements OnInit {
   }
 
   continueOperationCost() {
-    let listaPass = [1000, 1322, 4448, 1249, 5678];
+    let listaPass = [1000, 2222, 4448, 3333, 5678];
     let passwordaVerificar = false;
     this.passwordIngresado = parseInt(this.password);
 
