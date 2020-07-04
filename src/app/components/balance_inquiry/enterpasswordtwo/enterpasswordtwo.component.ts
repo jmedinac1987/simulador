@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class EnterpasswordtwoComponent implements OnInit {
   password: string = '';
   passwordIngresado: number = 0;
+  largoMaximoParaPassword: number = 4;
 
   constructor(private router: Router) {}
 
@@ -16,13 +17,16 @@ export class EnterpasswordtwoComponent implements OnInit {
 
   asignarValorPass(valor: string): string {
     let valorTemporal = '';
+    let valorTemporal2 = '';
     valorTemporal = this.password == '0' ? '' : this.password;
-    this.password = valorTemporal + valor;
+    valorTemporal2 = valorTemporal + valor;
+    if (valorTemporal2.length <= this.largoMaximoParaPassword) this.password = valorTemporal + valor;
+
     return this.password;
   }
 
   continueOperationCost() {
-    let listaPass = [1000, 2222, 4448, 5155, 5678];
+    let listaPass = [1000, 1322, 4448, 1249, 5678];
     let passwordaVerificar = false;
     this.passwordIngresado = parseInt(this.password);
 

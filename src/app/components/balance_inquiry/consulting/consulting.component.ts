@@ -9,9 +9,15 @@ import { Router } from '@angular/router';
 export class ConsultingComponent implements OnInit {
   loading: boolean = true;
   tiempo: number = 5000;
+  saldo: String = '';
+
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    let saldoNumerico = 0;
+    saldoNumerico = Math.floor(Math.random() * 3000000) + 877803;
+    this.saldo = saldoNumerico.toString();
+    
     setTimeout(this.eventoClick, this.tiempo);
   }
 
